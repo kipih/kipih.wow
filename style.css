@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.background {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  max-width: 100%;
+  min-height: 100vh;
+  background-color: #272727;
+}
+.blockInfo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; /* Вертикальное расположение внутренних элементов */
+    width: 400px;
+    height: 400px;
+    background-color: #D9D9D9;
+    border-radius: 68px;
+    position: relative;
+}
+.avatar {
+    margin: 0;
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    border-radius: 50%; /* Устанавливаем 50% для круглого блока */
+    z-index: 2;
+    overflow: hidden; /* Скрыть все, что выходит за пределы блока */
+}
+
+.avatar img {
+    width: 100%; /* Изображение будет заполнять всю ширину блока */
+    height: 100%; /* Изображение будет заполнять всю высоту блока */
+    object-fit: cover; /* Изображение заполняет блок, не искажая пропорции */
+}
+.telegrambar {
+    margin: 8px 0;
+    width: 150px;
+    height: 69px;
+    z-index: 1;
+    display: flex;
+    flex-direction: column; /* Размещение элементов вертикально */
+    align-items: center;
+}
+.telegrambar img {
+    width: 41px;
+    height: 41px;
+}
+.telegramName {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    width: 150px;
+    height: 20px;
+    background-color: black;
+    border-radius: 10px;
+    color: #FFFFFF;
+    font-size: 12px;
+    transition: font-size 0.3s; /* Добавляем плавный переход для размера шрифта */
+  }
+  
+  .telegramName a {
+    text-decoration: none;
+    color: #D9D9D9;
+  }
+  
+  .telegramName:hover {
+    font-size: 15px;
+  }
+  
+.socsicia {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 35px;
+    border-radius: 10px;
+  }
+  
+  .socsicia img {
+    width: 35px;
+    height: 35px;
+    margin-right: 5px; /* Отступ между картинками */
+  }
+  
+  .socsicia img:last-child {
+    margin-right: 0; /* Убираем отступ справа для последнего изображения */
+  }
+  
+  .socsicia img:hover {
+    filter: blur(2px); /* Применяем размытие при наведении */
+  }
+  
