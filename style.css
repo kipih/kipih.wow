@@ -42,7 +42,7 @@ body {
     object-fit: cover; /* Изображение заполняет блок, не искажая пропорции */
 }
 .telegrambar {
-    margin: 8px 0;
+    margin: 5px 0;
     width: 150px;
     height: 69px;
     z-index: 1;
